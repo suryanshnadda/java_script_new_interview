@@ -1,0 +1,48 @@
+<!DOCSTYPE html>
+<html>
+<head>
+<title>
+alert example
+</title>
+<!-- bootstarp cdn  -->
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+#jp ,#p
+{
+  text-align:center;
+  font-size:20px;
+  text-transform:capitalize;
+  background-color:5BC0EB;
+  color:white;
+}
+
+</style>
+</head>
+<body>
+<div class="jumbotron" id="jp">
+hello this is first Page
+
+<p id="heading"> js_function will be fired exactly after 3000ns lets see </p>
+
+<!-- java script -->
+
+<script>
+setTimeout(function()
+{
+document.getElementById('heading').innerHTML="alert_in_js";
+alert("welcome to nody js practices");
+},2000);
+
+</script>
+</body>
+
+</html>
