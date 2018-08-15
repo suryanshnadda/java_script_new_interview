@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>
-print
+to_hide_show
 </title>
 <!-- bootstarp cdn  -->
 
@@ -24,26 +24,31 @@ print
   background-color:5BC0EB;
   color:white;
 }
-
 </style>
 </head>
 <body>
 <div class="jumbotron" id="jp">
 if you will click this button page will reload
-
 <Br>
-<button class="btn btn-primary" onclick=fun() >get this page printed </button>
+<button class="btn btn-primary" id="hider" >remove everything</button>
 
 </div>
 
+<p id="text">hello world</p>
+
+
 <!-- java script -->
 <script>
-function fun()
-{
+// Here it doesn't matter how we hide the text,
+// could also use style.display:
 
-window.print();
-alert("page will be redirected in few seconds");
-};
+
+  document.getElementById("hider").onclick=function()
+  {
+    jp.remove();
+    text.remove();
+  }
+
 
 </script>
 </body>
